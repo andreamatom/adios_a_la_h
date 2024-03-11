@@ -1,0 +1,390 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+  .everything
+  {position: absolute;
+  margin-left: 10vw;
+  margin-right: 10vw;
+ top: 5vh;
+bottom: 5vh;}
+
+.hidden {
+  display: none;
+}
+
+    body {
+        background-color: white;
+        font-family: "Yrsa", serif;
+        font-optical-sizing: auto;
+  
+    }
+
+    canvas {
+      display: block;
+    }
+    
+    .custom-cursor1 {
+        cursor: pointer;
+    }
+
+		/* CSS Phone  */
+    @media (min-width: 360px) {
+
+          /* Toggle Button */
+    .container{
+      width: 100%;
+      height: 15vh;
+      background-color: #fff;
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+    }
+  
+    .button{
+      background-color: #d2d2d2;
+      width: 82px;
+      height: 25px; 
+      border-radius: 200px; 
+      cursor: pointer;
+      position: relative;
+      transition: 0.2s;
+      overflow: visible;
+    }
+
+  .button::before {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 15px;
+  transition: 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+    input:checked + .button {
+      background-color: #DBFF00; 
+    }
+
+    input:checked + .button::before{
+      transform: translate(45px, -50%);
+      background-color: #fff;
+
+    }
+
+    input{
+      display: none;
+  }
+  
+  /* CSS for titles */
+      .yrsa-h1 {
+        font-size: 96px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 300;
+      }
+
+      .yrsa-h2 {
+        font-weight: 300;
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+      }
+
+      .yrsa-h3 {
+        font-weight: 300;
+        font-size: 12px;
+        font-style: normal;
+        text-align: center;
+      }
+
+      .yrsa-body {
+        font-weight: 300;
+        font-size: 16px;
+        font-style: normal;
+        text-align: left;
+      }
+
+      .yrsa-bodybold {
+        font-size: 16px;
+        font-style: normal;
+        text-align: left;
+        font-weight: 500;
+      }
+
+      .yrsa-bodybigbold {
+        font-size: 20px;
+        font-style: normal;
+        text-align: left;
+        font-weight: 500;
+      }
+
+    .hover-htitles2 {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .hover-htitles2:before {
+        content: '';
+        position: absolute;
+        top: 0px; 
+        left: 0;
+        width: 10px; 
+        height: 15px; 
+        background-color: #DBFF00; 
+        display: block;
+    }
+    
+    
+      .hover-h {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .hover-h::before {
+        content: '';
+        position: absolute;
+        top: 0px; 
+        left: 0;
+        width: 8px; 
+        height: 16px; 
+        background-color: #DBFF00; 
+        display: block;
+    }
+
+    }
+  
+
+/* CSS for Big Screen (Desktop)  */
+    @media (min-width: 1500px) {
+		
+      .yrsa-h1 {
+        font-weight: 300;
+        font-size: 300px;
+        font-style: normal;
+        text-align: center;
+      }
+
+      .yrsa-h2 {
+        font-weight: 300;
+        font-size: 48px;
+        font-style: normal;
+        text-align: center;
+      }
+
+      .yrsa-h3 {
+        font-weight: 300;
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+      }
+
+      .yrsa-body {
+        font-weight: 300;
+        font-size: 35px;
+        font-style: normal;
+        text-align: left;
+        line-height: 49px;
+        margin: 60px;
+      }
+
+      .yrsa-bodybold {
+        font-weight: 500;
+        font-size: 35px;
+        font-style: normal;
+        text-align: left;
+        line-height: 49px;
+      }
+
+      .yrsa-bodybigbold {
+        font-weight: 500;
+        font-size: 54px;
+        font-style: normal;
+        text-align: left;
+        line-height: 64px;
+        margin: 60px;
+      }
+
+    .hover-hmedium {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hover-hmedium:before {
+        content: '';
+        position: absolute;
+        top: -5px; 
+        left: 0;
+        width: 23px; 
+        height: 40px; 
+        background-color: #DBFF00; 
+        display: block;
+    }
+
+    .hover-hmedium:hover::before {
+        content: none;
+    }
+
+    .hover-htitles2 {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hover-htitles2:before {
+        content: '';
+        position: absolute;
+        top: 0px; 
+        left: 0;
+        width: 28px; 
+        height: 50px; 
+        background-color: #DBFF00; 
+        display: block;
+    }
+
+    .hover-htitles2:hover::before {
+        content: none;
+    }
+
+      .hover-h {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hover-h::before {
+        content: '';
+        position: absolute;
+        top: -5px; 
+        left: 0;
+        width: 18px; 
+        height: 40px; 
+        background-color: #DBFF00; 
+        display: block;
+    }
+
+    .hover-h:hover::before {
+        content: none;
+    }
+
+.button {display:none}
+}
+    
+
+/* CSS for Extra Big Screen (Monitor)  */
+@media (min-width: 1800px) {
+
+  .yrsa-h1 {
+    font-weight: 300;
+    font-size: 400px;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .yrsa-h2 {
+    font-weight: 300;
+    font-size: 68px;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .yrsa-h3 {
+    font-weight: 300;
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .yrsa-body {
+    font-weight: 300;
+    font-size: 44px;
+    font-style: normal;
+    text-align: left;
+    line-height: 49px;
+    margin: 60px;
+  }
+
+  .yrsa-bodybold {
+    font-weight: 500;
+    font-size: 44px;
+    font-style: normal;
+    text-align: left;
+    line-height: 49px;
+  }
+
+  .yrsa-bodybigbold {
+    font-weight: 500;
+    font-size: 64px;
+    font-style: normal;
+    text-align: left;
+    line-height: 64px;
+    margin: 60px;
+  }
+
+
+.hover-hmedium {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-hmedium:before {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: 0;
+    width: 30px; 
+    height: 40px; 
+    background-color: #DBFF00; 
+    display: block;
+}
+
+.hover-hmedium:hover::before {
+    content: none;
+}
+
+.hover-htitles2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-htitles2:before {
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: 0;
+    width: 34px; 
+    height: 50px; 
+    background-color: #DBFF00; 
+    display: block;
+}
+
+.hover-htitles2:hover::before {
+    content: none;
+}
+
+  .hover-h {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-h::before {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: 0;
+    width: 22px; 
+    height: 40px; 
+    background-color: #DBFF00; 
+    display: block;
+}
+
+.hover-h:hover::before {
+    content: none;
+}
+
+.button {display:none}
+}
